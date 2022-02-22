@@ -68,7 +68,11 @@
             padding: 6px;
             margin-bottom: 12px;
         }
-
+        .input-name,
+        .input-email,
+        .input-password {
+            margin-bottom: 24px;
+        }
         .save-button{
             background-color: var(--hospital-green);
             border-radius: 8px;
@@ -84,6 +88,13 @@
         }
 
         @media(max-width: 640px){
+            .form-container{
+                height: 100%;}
+                
+            .form{
+                height: 100%;
+                justify-content: space-between;
+            }
             .save-button {
                 position: absolute;
                 bottom: 20px;
