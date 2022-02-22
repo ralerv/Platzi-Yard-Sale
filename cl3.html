@@ -44,6 +44,7 @@
             width: 150px;
             margin-bottom: 36px;
             justify-self: center;
+            display: none;
         }
 
         .title {
@@ -97,28 +98,44 @@
 
         .login-button {
             margin-top: 8px;
-            margin-bottom: 2px;
+            margin-bottom: 20px;
         }
 
         .Fpass{
             text-align: center;
             color: var(--hospital-green);
+            font-size: var(--md);
             font-weight: bold;
+            text-decoration: none;
+            margin-bottom: 8px;
         }
 
         .sign-up-button{
-            display: grid;
-            place-items: bottom;
             background-color: var(--white);
             border-radius: 8px;
-            border-color: var(--hospital-green);
-            border-style: solid;
+            border: 2px solid var(--hospital-green);
+            text-align: center;
             color: var(--hospital-green);
             width: 100%;
             cursor: pointer;    /* Cuando el cursor pase encima del botón cambia de estilo */
             font-size: var(--md);
             font-weight: bold;
             height: 48px;
+            margin-top: 74px;
+        }
+
+        @media(max-width: 640px){
+            .logo {
+                display: block;
+            }
+            .login-button {
+                margin-bottom: 28px;
+                }
+            .sign-up-button {
+                position: absolute;
+                bottom: 20px;
+                width: inherit;
+            }
         }
 
     </style>
@@ -138,8 +155,8 @@
 
                 <input type="submit" value="Log In" class="primary-button login-button"></input>   <!-- Submit sirve para enviar el formulario -->
             </form>
-            <p class="Fpass">Forgot my password</p>
-            <input type="button" value="Sign Up" class="sign-up-button"></input>
+            <a href="/" class="Fpass">Forgot my password</a>
+            <button class="sign-up-button">Sign Up</button>
         </div>
     </div>
 </body>
