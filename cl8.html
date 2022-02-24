@@ -27,41 +27,52 @@
         }
 
         .desktop-menu{
-            width: 100px;
-            height: auto;
-            border: 1px solid var(--very-light-pink);
-            border-radius: 6px;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            margin-left: 10%;
+            grid-template-rows: 1fr 3fr 2fr ;
         }
         
-        .desktop-menu-ul{
+        .desktop-menu ul{
             list-style: none;
             padding: 0;
             margin: 0;
+            
         }
 
-        .desktop-menu-ul li{
-            text-align: end;
+        .menu-categories li,
+        .menu-info li
+        {
+            margin: 8px 0 8px 0;
+        }
+
+        .menu-categories li a,
+        .menu-info li a
+        {
             text-decoration: none;
             color: var(--black);
-            margin: 8px 4px 8px 0;
             font-weight: bold;
+            font-size: var(--lg);
+            margin: 8px 0 8px 0;
         }
-        .desktop-menu-ul li a{
-            text-decoration: none;
-            color: var(--black);
+        
+        .my-info p{
+            color: var(--very-light-pink);
+            margin: 8px 0 8px 0;
         }
-        .desktop-menu-ul li:last-child{
-            padding-top: 12px;
-            border-top: 1px solid var(--very-light-pink);
-        }
-        .desktop-menu-ul li:last-child a {
+        .my-info button{
             color: var(--hospital-green);
-            font-size: var(--sm);
+            border: none;
+            padding: 0;
+            background-color: none;
+            background: none;
         }
     </style>
 </head>
 <body>
     <div class="desktop-menu">
+        <h1>Categories</h1>
         <ul class="menu-categories">
             <li><a href="/">All</a></li>
             <li><a href="/">Clothes</a></li>
