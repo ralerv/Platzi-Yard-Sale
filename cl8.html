@@ -26,25 +26,17 @@
             margin: 0;
         }
 
-        .desktop-menu{
-            width: 100%;
-            height: 100%;
-            display: grid;
-            margin-left: 10%;
-            grid-template-rows: 1fr 3fr 2fr ;
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
         }
         
-        .desktop-menu ul{
+        .flex-container ul{
             list-style: none;
             padding: 0;
             margin: 0;
             
-        }
-
-        .menu-categories li,
-        .menu-info li
-        {
-            margin: 8px 0 8px 0;
         }
 
         .menu-categories li a,
@@ -71,7 +63,7 @@
     </style>
 </head>
 <body>
-    <div class="desktop-menu">
+    <div class="flex-container">
         <h1>Categories</h1>
         <ul class="menu-categories">
             <li><a href="/">All</a></li>
