@@ -39,6 +39,17 @@
             width: 32%;
         }
 
+        .product-resume,
+        .product-card{
+            padding: 0 12px;
+        }
+
+        .product-resume-data p:first-child,
+        .product-resume-total-value{
+            font-size: var(--lg);
+            font-weight: bold;
+            color: var(--black);
+        }
         .product-card img {
             width: 80px;
             height: 80px;
@@ -104,11 +115,11 @@
 <body>    
     <div class="cards-container">
         <div class="product-resume">
-            <div>
+            <div class="product-resume-data">
                 <p>04.25.2021</p>
                 <p>6 articles</p>
             </div>
-            <p>$ 560.00</p>
+            <p class="product-resume-total-value">$ 560.00</p>
         </div>
         <div class="product-card">
             <div class="product-info">
