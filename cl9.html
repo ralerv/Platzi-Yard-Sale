@@ -31,6 +31,7 @@
             display: grid;
             place-items: center;
             margin-top: 6%;
+            gap: 16%;
         }
 
         .product-resume,
@@ -39,17 +40,32 @@
             width: 32%;
         }
 
+        
         .product-resume,
         .product-card{
             padding: 0 12px;
         }
 
+        .product-resume-data p{
+            margin: 8% 0 8% 0;
+        }
         .product-resume-data p:first-child,
         .product-resume-total-value{
             font-size: var(--lg);
             font-weight: bold;
             color: var(--black);
         }
+        .product-resume-data p:last-child{
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+        .product-price {
+            font-size: var(--lg);
+            font-weight: bold;
+            color: var(--black);
+            margin: 0;
+        }
+
         .product-card img {
             width: 80px;
             height: 80px;
@@ -59,7 +75,6 @@
 
         .product-resume {
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: space-between;
             background-color: var(--text-input-field);
@@ -86,11 +101,9 @@
             color: var(--very-light-pink)
         }
 
-        .product-price {
-            font-size: var(--lg);
-            font-weight: bold;
-            color: var(--black);
+        .title {
             margin: 0;
+            text-align: start;
         }
 
         @media(max-width: 640px){
@@ -114,6 +127,7 @@
 </head>
 <body>    
     <div class="cards-container">
+        <p class="title">My Order</p>
         <div class="product-resume">
             <div class="product-resume-data">
                 <p>04.25.2021</p>
