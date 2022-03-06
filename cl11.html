@@ -28,20 +28,76 @@
             margin: 0;
         }
 
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
         .menu{
             display: none;
         }
-
+        .navbar-left,
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
         .logo {
             width: 150px;
+        }
+
+        .navbar-left ul{
+            margin-left: 12px;
         }
 
         .navbar-left ul,
         .navbar-right ul {
             list-style-type: none;
             padding: 0;
-            margin-top: 24px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            margin-left: 20px;
         }
+
+        .navbar-left ul li a,
+        .navbar-right ul li{
+            text-decoration: none;
+            color: var(--very-light-pink);
+            padding: 8px;
+        }
+        .navbar-right ul li:first-child{
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-right: 12px;
+        }
+        .navbar-left ul li a:hover{
+            text-decoration: none;
+            color: var(--hospital-green);
+            border: 2px solid var(--hospital-green);
+            border-radius: 4px;
+        }
+
+        .navbar-shopping-cart{
+            position: relative;
+        }
+        .navbar-shopping-cart div{
+            height: 12px;
+            width: 12px;
+            background-color: var(--hospital-green);
+            color: var(--hospital-green);
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: var(--sm);
+            position: absolute;
+            top: 4px;
+            right: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
     </style>
 </head>
 <body>
