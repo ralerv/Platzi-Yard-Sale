@@ -32,6 +32,7 @@
             display: flex;
             justify-content: space-between;
             padding: 0 20px;
+            border-bottom: 2px solid var(--very-light-pink);
         }
         .menu{
             display: none;
@@ -97,7 +98,15 @@
             align-items: center;
         }
 
-        
+        @media (max-width:640px) {
+            .menu{
+                display: block;
+            }
+            .navbar-left ul,
+            .navbar-right ul li:first-child{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
