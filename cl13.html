@@ -28,27 +28,76 @@
         }
 
         .all{
-            width: 360px;
-            height: 100%;
             display: grid;
+            place-items: center;
         }
 
         .cards-container {
-            width: 100%;
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
-        .product-card img {
+        .product-info img {
             width: 80px;
             height: 80px;
             border-radius: 20px;
             object-fit: cover;
         }
 
-        .title {
-            margin: 0;
-            text-align: start;
+        .product-card,
+        .product-resume {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-info p{
+            margin-left: 12px;
+        }
+
+        .product-price{
             font-weight: bold;
-            font-size: var(--lg);
+        }
+
+        .product-resume {
+            background-color: var(--text-input-field);
+            border-radius: 8px;
+            padding: 0 8px;
+        }
+
+        .product-resume p{
+            font-weight: bold;
+        }
+
+        .product-value {
+            display: grid;
+            place-items: center;
+            grid-template-columns: auto auto;
+        }
+
+        .product-value img{
+            margin-left: 12px;
+        }
+
+        .primary-button {
+            align-items: center;
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            cursor: pointer;    /* Cuando el cursor pase encima del botón cambia de estilo */
+            font-size: var(--md);
+            font-weight: bold;
+            height: 48px;
         }
 
     </style>
@@ -58,53 +107,21 @@
 <body>
 <div class="all">
     <div class="cards-container">
-        <p class="title">My Order</p>
         <div class="product-card">
             <div class="product-info">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product" class="product-img">
                 <p>Bike</p>
             </div>
-            <p class="product-price">$ 120,00</p>
-         </div>
-         <div class="product-card">
-            <div class="product-info">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product" class="product-img">
-                <p>Bike</p>
+            <div class="product-value">
+                <p class="product-price">$ 120,00</p>
+                <img src="/Platzi_YardSale_Icons/icon_close.png" alt="delete">
             </div>
-            <p class="product-price">$ 120,00</p>
          </div>
-         <div class="product-card">
-            <div class="product-info">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product" class="product-img">
-                <p>Bike</p>
-            </div>
-            <p class="product-price">$ 120,00</p>
-         </div>
-         <div class="product-card">
-            <div class="product-info">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product" class="product-img">
-                <p>Bike</p>
-            </div>
-            <p class="product-price">$ 120,00</p>
-         </div>
-         <div class="product-card">
-            <div class="product-info">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product" class="product-img">
-                <p>Bike</p>
-            </div>
-            <p class="product-price">$ 120,00</p>
-         </div>
-         <div class="product-card">
-            <div class="product-info">
-                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product" class="product-img">
-                <p>Bike</p>
-            </div>
-            <p class="product-price">$ 120,00</p>
-         </div>
-        <div class="product-resume">
+         <div class="product-resume">
             <p>Total</p>
             <p class="product-resume-total-value">$ 560.00</p>
         </div>
+        <button class="primary-button">Checkout</button>
    </div>
 </div>
 </body>
