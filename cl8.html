@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu mobile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #909090;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {      
+            font-family: "Quicksand", sans-serif;
+            margin: 0;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100vh;
+            padding: 24px;
+        }
+        
+        .flex-container ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-categories li,
+        .menu-info li
+        {
+            margin: 8px 0 14px 0;
+        }
+        .menu-categories li a,
+        .menu-info li a
+        {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            font-size: var(--lg);
+
+        }
+        
+        .my-info p{
+            color: var(--very-light-pink);
+            margin: 8px 0 8px 0;
+        }
+        .my-info button{
+            color: var(--hospital-green);
+            border: none;
+            padding: 0;
+            background-color: none;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <h1>Categories</h1>
+        <ul class="menu-categories">
+            <li><a href="/">All</a></li>
+            <li><a href="/">Clothes</a></li>
+            <li><a href="/">Electronics</a></li>
+            <li><a href="/">Furnitures</a></li>
+            <li><a href="/">Toys</a></li>
+            <li><a href="/">Others</a></li>
+        </ul>
+        <ul class="menu-info">
+            <li><a href="/">My Orders</a></li>
+            <li><a href="/cl5.html">My Account</a></li>
+        </ul>
+        <div class="my-info">
+            <p>camilayokoo@gmail.com</p>
+            <button class="sign-out-button">Sign Out</button>
+        </div>
+    </div>
+</body>
+</html>

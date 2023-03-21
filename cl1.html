@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">      <!-- Enlazamos el html con el css como archivos separados -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">     <!-- Traemos las fuentes de Google fonts -->
+    <title>Log In</title>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <img src="/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <h1 class="title">Create a new password</h1>
+            <p class="subtitle">Enter your new password for your account</p>
+            <form action="/" class="form">      <!-- Crear formulario -->
+                <label for="password" class="label">Password</label>        <!-- Label es para indicar el titulo del input, for es para indicar a cual input ira -->
+                <input type="password" id="password" placeholder="****************" class="input input-password"></input>       <!-- type indica el tipo de input que sera, placeholder es lo que tiene escrito por determinado -->
+
+                <label for="new-passwrd" class="label">Repeat Password</label>
+                <input type="password" id="new-password" placeholder="****************" class="input input-password"></input>
+
+                <input type="submit" value="Confirm" class="primary-button login-button"></input>   <!-- Submit sirve para enviar el formulario -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>
