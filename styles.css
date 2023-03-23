@@ -195,7 +195,7 @@ nav {
 
 /*Product detail*/
 
-.cards-container{
+.shopping-cards-container{
     display: grid;
     place-items: center;
 }
@@ -295,7 +295,7 @@ nav {
     .product-detail {
         width: 100%;
     }
-    .cards-container {
+    .shopping-cards-container {
         padding: 16px;
     }
 }
