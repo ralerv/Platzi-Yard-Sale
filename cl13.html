@@ -27,12 +27,12 @@
             margin: 0;
         }
 
-        .all{
+        .cards-container{
             display: grid;
             place-items: center;
         }
 
-        .cards-container {
+        .product-detail {
             width: 360px;
             display: flex;
             flex-direction: column;
@@ -99,14 +99,18 @@
             font-weight: bold;
             height: 48px;
         }
-
+        @media (max-width: 640px) {
+            .product-detail {
+            width: 100%;
+            }
+    }
     </style>
 
     <title>My Order</title>
 </head>
 <body>
-<div class="all">
-    <div class="cards-container">
+<div class="cards-container">
+    <div class="product-detail">
         <div class="product-card">
             <div class="product-info">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product" class="product-img">
