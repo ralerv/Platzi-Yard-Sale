@@ -90,9 +90,11 @@ nav {
 }
 
 .navbar-email{
-    user-select: none;
     cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
 }
+
 
 @media (max-width:640px) {
     .menu{
