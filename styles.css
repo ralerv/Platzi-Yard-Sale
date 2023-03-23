@@ -31,6 +31,8 @@ nav {
 .navbar-right {
     display: flex;
     align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .logo {
     width: 150px;
@@ -73,10 +75,10 @@ nav {
     position: relative;
 }
 .navbar-shopping-cart div{
-    height: 12px;
-    width: 12px;
+    height: calc(var(--sm) + 2px);
+    width: calc(var(--sm) + 2px);
     background-color: var(--hospital-green);
-    color: var(--hospital-green);
+    color: var(--white);
     border-radius: 50%;
     font-weight: bold;
     font-size: var(--sm);
@@ -86,12 +88,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.navbar-email{
-    cursor: pointer;
-    -webkit-user-select: none;
-    user-select: none;
+    
 }
 
 
