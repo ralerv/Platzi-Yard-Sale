@@ -17,7 +17,6 @@ body {
     margin: 0;
 }
 
-.inactive{display:none}
 
 nav {
     display: flex;
@@ -218,4 +217,75 @@ nav {
 .login-button {
     margin-top: 14px;
     margin-bottom: 32px;
+}
+
+
+/* Mobile menu css */
+
+.mobile-menu{
+    position: absolute;
+    top: 60px;
+    padding: 24px;
+}
+
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 24px;
+}
+
+.mobile-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-categories li,
+.menu-info li
+{
+    margin: 8px 0 14px 0;
+}
+.menu-categories li a,
+.menu-info li a
+{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    font-size: var(--lg);
+
+}
+
+.my-info p{
+    color: var(--very-light-pink);
+    margin: 8px 0 8px 0;
+}
+.my-info button{
+    color: var(--hospital-green);
+    border: none;
+    padding: 0;
+    background-color: none;
+    background: none;
+}
+
+
+/* ianctive*/
+
+.inactive{display:none}
+
+
+@media (max-width: 640px){
+    .menu {
+        display: block;
+    }
+    .navbar-email, .desktop-menu, .navbar-left ul {
+        display: none;
+    }
+}
+
+@media (min-width: 641px){
+    .mobile-menu {
+        display: none;
+    }
 }
