@@ -222,6 +222,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 16px;
 }
 
 .shopping-cart-card-info img {
