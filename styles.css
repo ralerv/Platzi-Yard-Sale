@@ -112,6 +112,7 @@ nav {
     height: auto;
     border: 1px solid var(--very-light-pink);
     border-radius: 6px;
+    background-color: var(--white);
 }
 
 .desktop-menu-ul{
